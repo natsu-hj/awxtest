@@ -14,6 +14,8 @@
         state: stopped
         enabled: false
 
+    - name: curl index
+      get_url: url=https://www.daum.net dest=/var/www/html/index.html
     - name: start and enable httpd
       service:
         name: httpd
